@@ -2134,10 +2134,9 @@ li:hover {
   padding: 0.05em 0.3em;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  var: 6;
+  var: 1;
   color: #fff;
   background: rgba(153,204,153,0.7);
-  background: rgba(217,83,79,0.45);
 }
 pre .comment,
 pre .title {

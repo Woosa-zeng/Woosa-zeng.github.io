@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>HTML总结 | Woosa&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="HTML总结">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML总结">
+<meta property="og:url" content="http://yoursite.com/2016/02/25/HTML总结/index.html">
+<meta property="og:site_name" content="Woosa's Blog">
+<meta property="og:description" content="HTML总结">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1221115-e0d9db1423ca8c46.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://yoursite.com/01.png">
+<meta property="og:image" content="http://yoursite.com/02.png">
+<meta property="og:image" content="http://yoursite.com/05.png">
+<meta property="og:image" content="http://yoursite.com/06.png">
+<meta property="og:image" content="http://yoursite.com/08.png">
+<meta property="og:image" content="http://yoursite.com/07.png">
+<meta property="og:updated_time" content="2016-02-25T05:50:24.957Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HTML总结">
+<meta name="twitter:description" content="HTML总结">
+  
+    <link rel="alternative" href="/atom.xml" title="Woosa&#39;s Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+      <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css" type="text/css">
+  
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  
+      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  
+  <script>
+      var yiliaConfig = {
+          fancybox: true,
+          animate: true,
+          isHome: false,
+          isPost: true,
+          isArchive: false,
+          isTag: false,
+          isCategory: false,
+          open_in_new: false
+      }
+  </script>
+  
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            
+            <img lazy-src="/img/avatar.png" class="js-avatar">
+            
+        </a>
+
+        <hgroup>
+          <h1 class="header-author"><a href="/">曾萍</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">Don&#39;t limit your challenges challenge your limits.</p>
+        
+                
+
+
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">主页</a></li>
+                        
+                            <li><a href="/archives/">所有文章</a></li>
+                        
+                            <li><a href="/tags/随笔">随笔</a></li>
+                        
+                            <li><a href="/tags/">标签云</a></li>
+                        
+                            <li><a href="/about/">关于我</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <li id="Email"><a class="Email" target="_blank" href="mailto:zp-orange@163.com" title="Email"></a></li>
+                            
+                                <li id="新浪微博"><a class="新浪微博" target="_blank" href="/sina weibo" title="新浪微博"></a></li>
+                            
+                                <li id="GitHub"><a class="GitHub" target="_blank" href="https://github.com/Woosa-zeng" title="GitHub"></a></li>
+                            
+                                <li id="知乎"><a class="知乎" target="_blank" href="/zhihu" title="知乎"></a></li>
+                            
+                                <li id="简书"><a class="简书" target="_blank" href="http://www.jianshu.com/users/15b290b924e1/latest_articles" title="简书"></a></li>
+                            
+                                <li id="微信"><a class="微信" target="_blank" href="/Wechat" title="微信"></a></li>
+                            
+                                <li id="StackOverflow"><a class="StackOverflow" target="_blank" href="/#" title="StackOverflow"></a></li>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <a href="/tags/HTML/" style="font-size: 10px;">HTML</a>
+                    </div>
+                </section>
+                
+                
+                
+
+                
+                
+                <section class="switch-part switch-part3">
+                
+                    <div id="js-aboutme">专注于前端</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">曾萍</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                
+                    <img lazy-src="/img/avatar.png" class="js-avatar">
+                
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">曾萍</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">Don&#39;t limit your challenges challenge your limits.</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">主页</a></li>
+                
+                    <li><a href="/archives/">所有文章</a></li>
+                
+                    <li><a href="/tags/随笔">随笔</a></li>
+                
+                    <li><a href="/tags/">标签云</a></li>
+                
+                    <li><a href="/about/">关于我</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <li id="Email"><a class="Email" target="_blank" href="mailto:zp-orange@163.com" title="Email"></a></li>
+                            
+                                <li id="新浪微博"><a class="新浪微博" target="_blank" href="/sina weibo" title="新浪微博"></a></li>
+                            
+                                <li id="GitHub"><a class="GitHub" target="_blank" href="https://github.com/Woosa-zeng" title="GitHub"></a></li>
+                            
+                                <li id="知乎"><a class="知乎" target="_blank" href="/zhihu" title="知乎"></a></li>
+                            
+                                <li id="简书"><a class="简书" target="_blank" href="http://www.jianshu.com/users/15b290b924e1/latest_articles" title="简书"></a></li>
+                            
+                                <li id="微信"><a class="微信" target="_blank" href="/Wechat" title="微信"></a></li>
+                            
+                                <li id="StackOverflow"><a class="StackOverflow" target="_blank" href="/#" title="StackOverflow"></a></li>
+                            
+                        </ul>
+            </nav>
+        </header>                
+    </div>
+</nav>
+      <div class="body-wrap"><article id="post-HTML总结" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/02/25/HTML总结/" class="article-date">
+      <time datetime="2016-02-25T04:06:53.000Z" itemprop="datePublished">2016-02-25</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      HTML总结
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/web前端/">web前端</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML/">HTML</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h2 id="HTML总结"><a href="#HTML总结" class="headerlink" title="HTML总结"></a>HTML总结</h2><p>学习要求<br>1.要会使用标签和属性。<br>2.在什么时候使用什么样的标签。<br>3.写出语义化的页面。<br>html的语义化：选择合适的标签、使用合理的代码结构，合理的命名，便于开发者阅读，同时让浏览器的爬虫和机器很好地解析，在搜索引擎里的权重会相对高一些。<br>合理的使用标签：尽量使用语义化标签，越是原生的标签加载的越快。<br>命名的规范：全部用小写，两个词连起来中间“中横线”链接起来。</p>
+<h3 id="第一课"><a href="#第一课" class="headerlink" title="第一课"></a>第一课</h3><ul>
+<li>sublime安装插件<blockquote>
+<p>步骤一：首先你需要为sublime text安装Package Control组件：<br>按Ctrl+`调出sublime text的console<br>粘贴以下代码到底部命令行并回车： import urllib2,os;pf=’Package Control.sublime-package’;ipp=sublime.installe d<em>packages</em>path();os.makedirs(ipp) if not os.path.exists(ipp) else None;open(os.path.join(ipp,pf),’wb’).write(urllib2.urlopen(‘<a href="http://sublime.wbond.net/&#39;+pf.replace" target="_blank" rel="external">http://sublime.wbond.net/‘+pf.replace</a>(‘ ‘,’%20’)).read())<br>重启Sublime Text<br>在Perferences-&gt;package settings中看到package control，则表示安装成功<br>步骤二：使用Package Control安装Emmet插件：<br>按Ctrl+Shift+P命令板<br>输入install然后选择install Package，然后输入emmet找到 Emmet Css Snippets，点击就可以自动完成安装。</p>
+</blockquote>
+</li>
+</ul>
+<p>更多插件和快捷键（<a href="http://wenku.baidu.com/link?url=2Xab4xtekcXDAmEqxKGXODLGAmUewRfz5bTSW4WV8yUaiw-8I8tc3jq9pDIYRYLAuxGP0RxVGytYylDn5DK7UFLavd1zV0wjxSgeXQa00WC）" target="_blank" rel="external">http://wenku.baidu.com/link?url=2Xab4xtekcXDAmEqxKGXODLGAmUewRfz5bTSW4WV8yUaiw-8I8tc3jq9pDIYRYLAuxGP0RxVGytYylDn5DK7UFLavd1zV0wjxSgeXQa00WC）</a></p>
+<p>不是全英文的HTML文件保存方式要以utf-8的方式去保存.浏览器再以utf-8的方式解码就能正确显示。</p>
+<ul>
+<li>颜色的三种写法：<br>下图是两种写法，16进制色号最小值#00，最大值#ff；RGB写法最小值0，最大值255；还有一种直接英文颜色名字，如红色，直接写red。<br><img src="http://upload-images.jianshu.io/upload_images/1221115-e0d9db1423ca8c46.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="09.png"></li>
+<li>常见的浏览器内核<br>rem-em-px的用法:px是固定值。rem是相对于根节点，如果没有设置HTML字体大小，则以默认的16px为基础去计算。em是相对于父节点去改变，如果有很多嵌套的值则每个都计算一次。</li>
+</ul>
+<h3 id="第二课"><a href="#第二课" class="headerlink" title="第二课"></a>第二课</h3><ul>
+<li>meta的使用<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta <span class="property">name</span>=<span class="string">"description"</span> content=<span class="string">"饥人谷前端学习社区"</span>&gt;</span><br><span class="line">&lt;meta <span class="property">name</span>=<span class="string">"keywords"</span> content=<span class="string">"前端 饥人谷 社区 "</span>&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>在百度搜索的时候，content里的信息就会被展示出来。（搜索引擎的规则也是在变的）<br><code>&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot;&gt;</code>的具体含义是：如果安装了GCF，则使用GCF来渲染页面「”chrome=1”」，如果没有安装GCF，则使用最高版本的IE内核进行渲染「”IE=edge”」.</p>
+<ul>
+<li>开发调试<br>浏览器审查元素,Elements对 dome元素的展示修改 ，styles,对应的样式，console对应JS调试。<br>一般的调试用<code>console.log();</code>在后台展示.把信息展示在控制台上，<br>在写代码的过程中很容易出错，所以需要用开发调试，要知道他每一步进展到什么地步。</li>
+<li><p>样式的三种写法，样式放文档头部，JS放尾部。<br>浏览器的缺省设置，默认设置。 （什么样式都没有设置的情况下显示）</p>
+</li>
+<li><p>外置样式表,提高复用性。</p>
+</li>
+</ul>
+<figure class="highlight fsharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=<span class="string">"stylesheet"</span> <span class="class"><span class="keyword">type</span></span>=<span class="string">"text/css"</span> href=<span class="string">"./index.css"</span>&gt;</span><br></pre></td></tr></table></figure>
+<p>./表示当前路径下，不加./也表示在当前路径下。<br>../表示上级目录下.<br>href资源定位符。</p>
+<ul>
+<li><p>内部样式表</p>
+<figure class="highlight"><figcaption><span>type="text/css"></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">p&#123;&#10;      color: red;&#10;      font-size: 20px;&#10; &#125;&#10;&#60;/style&#62;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>不要写成一排,<code>p{color: red;font-size: 20px;}</code>这样写的可能读性很差。<br>html5里面可以不加type=”text/css”</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css"></span><br><span class="line"><span class="tag">p</span><span class="rules">&#123;</span><br><span class="line">      <span class="rule"><span class="attribute">color</span>:<span class="value"> red</span></span>;</span><br><span class="line">      <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">20px</span></span></span>;</span><br><span class="line"> &#125;</span></span><br><span class="line"></span><span class="tag">&lt;/<span class="title">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>内置样式表<br>直接写在标签内,尽量不用。</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">p</span> <span class="attribute">style</span>=<span class="value">"border: 1px solid $fff; border-radius: 4px;"</span>&gt;</span>段落<span class="tag">&lt;/<span class="title">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在CSS里引入其它的样式表<br><code>@import url(index2.css);</code> </p>
+</li>
+<li>JS的引用 方式</li>
+<li><p>内部JS，直接写在</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="actionscript"></span><br><span class="line">       <span class="keyword">var</span> a =<span class="number">1</span>;</span><br><span class="line"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>外部JS<br><code>&lt;script type=&quot;text/javascript&quot; src=&quot;js/basic.js&quot;&gt;&lt;/script&gt;</code></p>
+</li>
+</ul>
+<p>href基本只用于CSS和a标签的引用，JS用的是src.图片也用src.</p>
+<ul>
+<li>新建HTML文件的时候最好命名为index.html.默认找到的为index.html.</li>
+<li>字体</li>
+<li>颜色 </li>
+<li>id和class<br>id定义唯一<code>#</code>,class定义一类<code>.</code>。</li>
+<li>水平和垂直居中<br>行高 line-height=height的时候，垂直居中.可以做按钮，或者知道行高的情况下使用，段落超出无效。<br>水平居中 text-align:center.<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"UTF-8"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="title">title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css"></span><br><span class="line">    <span class="tag">body</span><span class="rules">&#123;</span><br><span class="line">      <span class="rule"><span class="attribute">background</span>:<span class="value"> red</span></span>;</span><br><span class="line">    &#125;</span></span><br><span class="line">    <span class="tag">p</span><span class="rules">&#123;</span><br><span class="line">      <span class="rule"><span class="attribute">border</span>:<span class="value"> <span class="number">2px</span> solid white</span></span>;</span><br><span class="line">      <span class="rule"><span class="attribute">border-radius</span>:<span class="value"> <span class="number">4px</span></span></span>;</span><br><span class="line">      <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">100px</span></span></span>;</span><br><span class="line">      <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">60px</span></span></span>;</span><br><span class="line">      <span class="rule"><span class="attribute">line-height</span>:<span class="value"> <span class="number">60px</span></span></span>;</span><br><span class="line">      <span class="rule"><span class="attribute">text-align</span>:<span class="value"> center</span></span>;</span><br><span class="line">    &#125;</span></span><br><span class="line">  </span><span class="tag">&lt;/<span class="title">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">p</span>&gt;</span></span><br><span class="line">    确定</span><br><span class="line">  <span class="tag">&lt;/<span class="title">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="第三课"><a href="#第三课" class="headerlink" title="第三课"></a>第三课</h3><ul>
+<li>首行缩进2个字<code>text-decoration: 2em;</code></li>
+<li>强制折行<code>word-wrap:break-word;</code></li>
+<li><p>a链接<br><code>&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;我是链接&lt;/a&gt;</code><strong>target=”_blank”新标签打开</strong><br>a链接鼠标放上去有个手式，所以一般用a链接做按钮。<strong>对a链接设置颜色必须指定到a链接本身。 </strong><br>下面是它的属性</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">a</span><span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">color</span>:<span class="value"> red</span></span>;                          <span class="comment">/*设置链接初始颜色为红色*/</span></span><br><span class="line">  <span class="rule"><span class="attribute">text-decoration</span>:<span class="value"> none</span></span>;        <span class="comment">/*去掉默认的下划线*/</span></span><br><span class="line">  <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">4px</span></span></span>;                     <span class="comment">/*加边框可以做成一个按钮*/</span> </span><br><span class="line">  <span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="hexcolor">#ccc</span></span></span>;              <span class="comment">/*按钮的背景色*/</span></span><br><span class="line">  <span class="rule"><span class="attribute">border-radius</span>:<span class="value"> <span class="number">3px</span></span></span>;             <span class="comment">/*为按钮加个圆角*/</span></span><br><span class="line">  <span class="rule"><span class="attribute">transition</span>:<span class="value"> color <span class="number">0.2s</span></span></span>;          <span class="comment">/*延迟两秒改变颜色，不要写在hover里面*/</span></span><br><span class="line">&#125;</span></span><br><span class="line"><span class="tag">a</span><span class="pseudo">:hover</span><span class="rules">&#123;                     <span class="comment">/* hover一个伪类,IE8以上才可以用鼠标放在目标上颜色改变为蓝色，hover也可以用在div上*/</span></span><br><span class="line">  <span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#eee</span></span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"><span class="tag">a</span><span class="pseudo">:active</span><span class="rules">&#123;                        <span class="comment">/*鼠标按住的时候颜色变为蓝色*/</span></span><br><span class="line">    <span class="rule"><span class="attribute">background</span>:<span class="value">blue</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>跳转到锚点<br><code>&lt;a href=&quot;#tips&quot; target=&quot;_blank&quot;&gt;hunger&lt;/a&gt;
+...&lt;p id=&quot;tips&quot;&gt;点击链接跳转到这里&lt;/p&gt;</code></p>
+</li>
+<li><p>表格table<br>tr:行，td:列，th：表头；<br>基本写法</p>
+</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="doctype">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">html</span> <span class="attribute">lang</span>=<span class="value">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"UTF-8"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="title">title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css"></span><br><span class="line">    <span class="tag">table</span><span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">border-collapse</span>:<span class="value">collapse</span></span>;     <span class="comment">/*一般针对表格，只能写在table里，不能写table th /td*/</span></span><br><span class="line">  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">500px</span></span></span>; </span><br><span class="line">  <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">100px</span></span></span>;                </span><br><span class="line">&#125;</span></span><br><span class="line"><span class="tag">table</span> <span class="tag">th</span>,<span class="tag">table</span> <span class="tag">td</span><span class="rules">&#123;                  <span class="comment">/*并列关系用逗号分隔*/</span>           </span><br><span class="line">  <span class="rule"><span class="attribute">border</span>:<span class="value"> <span class="number">1px</span> solid <span class="hexcolor">#ccc</span></span></span>;         </span><br><span class="line">  <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">5px</span></span></span>;                  <span class="comment">/*内边距，只能写在th,td里面，不能直接写table里面*/</span></span><br><span class="line">&#125;</span></span><br><span class="line"><span class="tag">th</span><span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">background-color</span>:<span class="value"> green</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#fff</span></span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"><span class="tag">td</span><span class="pseudo">:hover</span><span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">background-color</span>:<span class="value"> <span class="hexcolor">#eee</span></span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line">  </span><span class="tag">&lt;/<span class="title">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">table</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">tr</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">th</span>&gt;</span>11<span class="tag">&lt;/<span class="title">th</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">th</span>&gt;</span>22<span class="tag">&lt;/<span class="title">th</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">tr</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">td</span>&gt;</span>11<span class="tag">&lt;/<span class="title">td</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">td</span>&gt;</span>22<span class="tag">&lt;/<span class="title">td</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">tr</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">td</span>&gt;</span>11<span class="tag">&lt;/<span class="title">td</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">td</span>&gt;</span>22<span class="tag">&lt;/<span class="title">td</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">tr</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="title">table</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="01.png" alt="01.png"><br>从上图可以看出th默认情况下是垂直和水平居中的，但td只是垂直居中并没有水平居中。</p>
+<ul>
+<li>设置图片水平垂直居中<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css"></span><br><span class="line"><span class="tag">div</span><span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">500px</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">500px</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">background-color</span>:<span class="value"> <span class="hexcolor">#ccc</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">display</span>:<span class="value"> table-cell</span></span>;                        <span class="comment">/*div以表格的方式去渲染*/</span></span><br><span class="line">  <span class="rule"><span class="attribute">vertical-align</span>:<span class="value"> middle</span></span>;                  <span class="comment">/*在div中无效，但在表格中有效*/</span></span><br><span class="line">  <span class="rule"><span class="attribute">text-align</span>:<span class="value"> center</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line">  </span><span class="tag">&lt;/<span class="title">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"1.png"</span> <span class="attribute">alt</span>=<span class="value">"图片"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><em>display</em>常用的值//block; inline; inline-block; none; table-cell;<br>display-none:让一个元素消失，不显示在页面上。但依然在DOM树中并没有真正的消失.<br>opacity:0,透明度设置0，则不可见。</p>
+<ul>
+<li>有序列表ol,无序列表ul,自定义列表dl.（块级元素）<br>有序列表的使用，当有明显的步骤，1.2.3….<br>无序列表是最常见的，用的最多的。凡是并列的，都建议用ul.<br>页面分析，先分大的区块，再分小的区块，再去一步步细化。<br>自定义列表，dl里面包含dt表头和dd<br>分析下图</li>
+</ul>
+<p><img src="02.png" alt="02.png"></p>
+<ul>
+<li><p>div<br>html里使用最多的标签，用于页面结构划分，页面分区<br>比如一个典型的网页分为头部，内容，尾部；内容可分为侧边栏和主体内容</p>
+<figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">&lt;body&gt;</span> </span><br><span class="line">     <span class="variable">&lt;div id="header"&gt;</span><span class="variable">&lt;/div&gt;</span></span><br><span class="line">     <span class="variable">&lt;div id="content"&gt;</span></span><br><span class="line">          <span class="variable">&lt;div class="sidebar"&gt;</span><span class="variable">&lt;/div&gt;</span> </span><br><span class="line">          <span class="variable">&lt;div class="main"&gt;</span><span class="variable">&lt;/div&gt;</span> </span><br><span class="line">     <span class="variable">&lt;/div&gt;</span> </span><br><span class="line">     <span class="variable">&lt;div id="footer"&gt;</span><span class="variable">&lt;/div&gt;</span></span><br><span class="line"><span class="variable">&lt;/body&gt;</span></span><br><span class="line">style type=<span class="string">"text/css"</span>&gt; </span><br><span class="line">    div &#123; </span><br><span class="line">        width: 100px; /<span class="keyword">*</span> 宽度 <span class="keyword">*</span>/ </span><br><span class="line">        height: 100px; /<span class="keyword">*</span> 高度 <span class="keyword">*</span>/ </span><br><span class="line">        border: 1px solid red; /<span class="keyword">*</span> 边框 <span class="keyword">*</span>/ </span><br><span class="line">        text-align: center; /<span class="keyword">*</span> 内部文本居中 <span class="keyword">*</span>/ </span><br><span class="line">        background-color: blue; /<span class="keyword">*</span> 背景颜色<span class="keyword">*</span>/</span><br><span class="line">        color: white; /<span class="keyword">*</span> 字体颜色 <span class="keyword">*</span>/ </span><br><span class="line">        border-radius: 4px; /<span class="keyword">*</span> 圆角 <span class="keyword">*</span>/ </span><br><span class="line">  &#125;</span><br><span class="line"><span class="variable">&lt;/style&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>text-align应用在块级元素上(div或者p),对它内部的行内元素产生效果</p>
+</li>
+<li>块级别元素、行内元素<br>块级元素占用空间是一整行，行内元素占用空间是它自身的内容宽度。行内元素可以一并排显示，块级元素不能。<br>块级元素：div、p、h1…h6、table、tr、ul、li、dl、dt、form<br>行内元素：a、span、img、input、button、em、textarea<br>更多的块级元素和行内元素 <a href="http://blog.csdn.net/freshlover/article/details/7076831" target="_blank" rel="external">http://blog.csdn.net/freshlover/article/details/7076831</a></li>
+<li>对行内元素，需要注意如下：<br>设置宽度width   无效。<br>设置高度height  无效，可以通过line-height来设置。<br>设置margin 只有左右margin有效，上下无效。<br>设置padding 只有左右padding有效，上下则无效。注意元素范围是增大了，但是对元素周围的内容是没影响的。<br>下图是line-height对行内元素的应用：<br><img src="05.png" alt="05.png"></li>
+</ul>
+<p><img src="06.png" alt="06.png"></p>
+<p>可以通过display: block;/display: inline;去改变行内元素和块级元素本身的属性；<br><code>display:inline-block</code>既能像行内元素一样水平的排列，又有块级元素的一些特性，比如上下边距，左右边距，宽，高；IE8以下不能使用。</p>
+<h3 id="第四课"><a href="#第四课" class="headerlink" title="第四课"></a>第四课</h3><ul>
+<li>from表单<br>用于把用户输入的数据提交到后台<br>input都要有name属性<br>action: 提交到的地址<br>method: 提交方式，get和post，应用的时候需要和后端交互<br>区别</li>
+</ul>
+<ol>
+<li>数据提交方式不同，get把提交的数据url可以看到，post看不到 </li>
+<li>get一般用于提交少量数据，post用于提交大量数据 </li>
+<li>get最多提交1k数据，浏览器的限制。post理论上无限制，受服务器限制 </li>
+<li>get提交的数据在浏览器历史记录中，安全性不好<br>查看提交结果，审查元素 network，Headers,勾选preserve log 控制刷新<br>随机验证码由后端生成 ，前端只用写个img<br>input name值一样，表示一组，只能单选，不能多选.(checkbox默认多选)<br>checkbox:提交一组数据。默认选择上某项，只需要加一个checked<figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">form</span> name=<span class="string">"myform"</span> action=<span class="string">"/text/1.php"</span> method=<span class="string">"post"</span>&gt;</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">      爱好: &lt;<span class="keyword">input</span> <span class="keyword">type</span>=<span class="string">"checkbox"</span> name=<span class="string">"hobbies[]"</span> value=<span class="string">"music"</span> checked /&gt;音乐</span><br><span class="line">          &lt;<span class="keyword">input</span> <span class="keyword">type</span>=<span class="string">"checkbox"</span> name=<span class="string">"hobbies[]"</span> value=<span class="string">"drawing"</span> /&gt;画画</span><br><span class="line">          &lt;<span class="keyword">input</span> <span class="keyword">type</span>=<span class="string">"checkbox"</span> name=<span class="string">"hobbies[]"</span> value=<span class="string">"travel"</span> /&gt;旅行</span><br><span class="line">          &lt;<span class="keyword">input</span> <span class="keyword">type</span>=<span class="string">"checkbox"</span> name=<span class="string">"hobbies[]"</span> value=<span class="string">"yoga"</span> /&gt;瑜伽</span><br><span class="line">          &lt;<span class="keyword">input</span> <span class="keyword">type</span>=<span class="string">"checkbox"</span> name=<span class="string">"hobbies[]"</span> value=<span class="string">"movie"</span> /&gt;电影</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;<span class="keyword">input</span> <span class="keyword">type</span>=<span class="string">"submit"</span> value=<span class="string">"提交"</span>&gt;</span><br><span class="line">  &lt;/<span class="keyword">form</span>&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p><img src="08.png" alt="08.png"><br>Hidden:隐藏域，用于暂存数据,安全校验.<br>select:多选框，selected定义默认选项.<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">form</span> <span class="attribute">action</span>=<span class="value">"/test/6.php"</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;<span class="title">select</span> <span class="attribute">name</span>=<span class="value">"mycar"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">option</span> <span class="attribute">value</span> =<span class="value">"volvo"</span>&gt;</span>Volvo<span class="tag">&lt;/<span class="title">option</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">option</span> <span class="attribute">value</span> =<span class="value">"saab"</span>&gt;</span>Saab<span class="tag">&lt;/<span class="title">option</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">option</span> <span class="attribute">value</span>=<span class="value">"opel"</span>&gt;</span>Opel<span class="tag">&lt;/<span class="title">option</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">option</span> <span class="attribute">value</span>=<span class="value">"audi"</span> <span class="attribute">selected</span>&gt;</span>Audi<span class="tag">&lt;/<span class="title">option</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">select</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"submit"</span>&gt;</span>提交<span class="tag">&lt;/<span class="title">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">form</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p><img src="07.png" alt="07.png"></p>
+<p>iframe：在一个页面中嵌入另一个页面。做复杂效果弹框可以直接嵌入Iframe.</p>
+<p>HTML的课程已经结束，但还有很多知识点需要再继续深入巩固，一边看视频一边整理的，感觉有些乱，还有很多不到位的，需要补充的会继续更改，有理解不对的地方希望大家多提意见。在这里谢谢各位看官了。</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+
+
+    <nav id="article-nav">
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2016/02/25/hello-world/">
+                    Hello World
+                </a>
+            </div>
+        
+    </nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML总结"><span class="toc-number">1.</span> <span class="toc-text">HTML总结</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#第一课"><span class="toc-number">1.1.</span> <span class="toc-text">第一课</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第二课"><span class="toc-number">1.2.</span> <span class="toc-text">第二课</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第三课"><span class="toc-number">1.3.</span> <span class="toc-text">第三课</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第四课"><span class="toc-number">1.4.</span> <span class="toc-text">第四课</span></a></li></ol></li></ol>
+</div>
+<style>
+    .left-col .switch-btn {
+        display: none;
+    }
+    .left-col .switch-area {
+        display: none;
+    }
+</style>
+
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+            $(".switch-btn, .switch-area").fadeOut(300);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+            $(".switch-btn, .switch-area").fadeIn(500);
+        }
+    })
+
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+        $(".switch-btn, .switch-area").show();
+    }
+</script>
+
+
+
+
+    <div class="share">
+    <div class="bdsharebuttonbox">
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+    <a href="#" class="bds_copy" data-cmd="copy" title="复制网址"></a>
+    <a href="#" class="bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+    </div>
+    <script>
+        window._bd_share_config={
+            "common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+    </script>
+</div>
+
+
+
+    
+      <div class="duoshuo" id="comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="2016/02/25/HTML总结/" data-title="HTML总结" data-url="http://yoursite.com/2016/02/25/HTML总结/"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:"woosazeng"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+    <!-- 多说公共JS代码 end -->
+</div>
+
+    
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2016/02/25/hello-world/" title="下一篇: Hello World">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/02/25/HTML总结/">HTML总结</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/02/25/hello-world/">Hello World</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/02/25/inline-block/">inline-block的缝隙</a></li></ul>
+    <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#toc, .switch-btn, .switch-area").toggle();
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+                $(".switch-btn, .switch-area").fadeToggle(300);
+            }
+        })
+    </script>
+
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2016 曾萍
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的静态博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减双栏 Hexo 博客主题">Yelee</a> by MOxFIVE
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" >本站到访数: 
+                            <span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>, </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit">本页阅读量: 
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+    </div>
+    
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+    <style>
+        body {
+          background: lightgray;
+        }
+        #container .left-col {
+          background: white;
+        }
+        .article-inner {
+          background: white;
+          margin-bottom: 1em;
+        }
+        .post-nav-button {
+          background: #ececec;
+        }
+        #header .header-nav .social #GitHub {
+          background-color: #bfd3ec;
+        }
+        #post-nav-button a {
+          background: rgba(215, 216, 215, .2);
+        }
+        .post-list {
+          background: white;
+        }
+    </style>
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+</div>
+
+<script>
+    $(document).ready(function() {
+        if ($("#comments").length < 1) {
+            $("#scroll > a:nth-child(2)").hide();
+        };
+    })
+</script>
+
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+  </div>
+</body>
+</html>
