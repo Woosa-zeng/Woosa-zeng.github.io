@@ -3,27 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>inline-block的缝隙 | Woosa&#39;s Blog</title>
+  <title>js基本概念语法 | Woosa&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="inline-block的缝隙元素加inline-block之后默认右边是有缝隙的，如果在子元素设置font-size过小可能会出现上边距产生缝隙，而同样的字体大小设置在父元素上不会产生上下缝隙。">
+  <meta name="description" content="js基本概念语法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="inline-block的缝隙">
-<meta property="og:url" content="http://yoursite.com/2016/02/25/inline-block/index.html">
+<meta property="og:title" content="js基本概念语法">
+<meta property="og:url" content="http://yoursite.com/2016/02/29/js基本概念语法/index.html">
 <meta property="og:site_name" content="Woosa's Blog">
-<meta property="og:description" content="inline-block的缝隙元素加inline-block之后默认右边是有缝隙的，如果在子元素设置font-size过小可能会出现上边距产生缝隙，而同样的字体大小设置在父元素上不会产生上下缝隙。">
-<meta property="og:image" content="http://yoursite.com/02.png">
-<meta property="og:image" content="http://yoursite.com/01.png">
-<meta property="og:image" content="http://yoursite.com/03.png0">
-<meta property="og:image" content="http://yoursite.com/04.png">
-<meta property="og:image" content="http://yoursite.com/05.png">
-<meta property="og:image" content="http://yoursite.com/06.png">
-<meta property="og:image" content="http://yoursite.com/07.png">
-<meta property="og:image" content="http://yoursite.com/08.png">
-<meta property="og:image" content="http://yoursite.com/09.png">
-<meta property="og:updated_time" content="2016-02-27T01:50:25.268Z">
+<meta property="og:description" content="js基本概念语法">
+<meta property="og:updated_time" content="2016-02-29T15:28:07.215Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="inline-block的缝隙">
-<meta name="twitter:description" content="inline-block的缝隙元素加inline-block之后默认右边是有缝隙的，如果在子元素设置font-size过小可能会出现上边距产生缝隙，而同样的字体大小设置在父元素上不会产生上下缝隙。">
+<meta name="twitter:title" content="js基本概念语法">
+<meta name="twitter:description" content="js基本概念语法">
   
     <link rel="alternative" href="/atom.xml" title="Woosa&#39;s Blog" type="application/atom+xml">
   
@@ -201,11 +192,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-inline-block" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-js基本概念语法" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/02/25/inline-block/" class="article-date">
-      <time datetime="2016-02-24T16:05:32.000Z" itemprop="datePublished">2016-02-25</time>
+      <a href="/2016/02/29/js基本概念语法/" class="article-date">
+      <time datetime="2016-02-29T15:17:54.000Z" itemprop="datePublished">2016-02-29</time>
 </a>
     </div>
   
@@ -218,7 +209,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      inline-block的缝隙
+      js基本概念语法
     </h1>
   
 
@@ -227,13 +218,13 @@
       <div class="article-info article-info-post">
         
     <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/笔记/">笔记</a>
+    <a class="article-category-link" href="/categories/web前端/">web前端</a><a class="article-category-link" href="/categories/web前端/笔记/">笔记</a>
     </div>
 
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/">JavaScript</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -243,16 +234,33 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h1 id="inline-block的缝隙"><a href="#inline-block的缝隙" class="headerlink" title="inline-block的缝隙"></a>inline-block的缝隙</h1><p>元素加<code>inline-block</code>之后默认<strong>右边</strong>是有缝隙的，如果在子元素设置<code>font-size</code>过小可能会出现<strong>上边距</strong>产生缝隙，而同样的字体大小设置在<strong>父元素</strong>上不会产生上下缝隙。<a id="more"></a><br>见下图：<br><em>font-size在子元素上：</em><br><img src="02.png" alt="02.png"><br><em>font-size在父元素上：</em><br><img src="01.png" alt="01.png"><br><strong>解决右边所产生的缝隙</strong></p>
-<h3 id="方法1：标签头尾无空格"><a href="#方法1：标签头尾无空格" class="headerlink" title="方法1：标签头尾无空格"></a>方法1：标签头尾无空格</h3><p>缺点，标签可读性很差<br><img src="03.png0" alt="03.png"></p>
-<h3 id="方法2：标签头尾无空格"><a href="#方法2：标签头尾无空格" class="headerlink" title="方法2：标签头尾无空格"></a>方法2：标签头尾无空格</h3><p>怪异写法<br><img src="04.png" alt="04.png"></p>
-<h3 id="方法3：负margin"><a href="#方法3：负margin" class="headerlink" title="方法3：负margin"></a>方法3：负margin</h3><p><img src="05.png" alt="05.png"></p>
-<p><img src="06.png" alt="06.png"></p>
-<h3 id="方法4：float浮动"><a href="#方法4：float浮动" class="headerlink" title="方法4：float浮动"></a>方法4：float浮动</h3><p>为了得到我们想要的效果，并不是只能用inline-block,我们来看一下float的效果<br><img src="07.png" alt="07.png"></p>
-<p><img src="08.png" alt="08.png"></p>
-<h3 id="方法5：父容器font-size为0"><a href="#方法5：父容器font-size为0" class="headerlink" title="方法5：父容器font-size为0"></a>方法5：父容器font-size为0</h3><p><strong>总结：父容器的font-size为0是最简单方法。父容器设置font-size为0后，我们可以随意设置父元素上的margin,子元素的font-size,padding等，都不会产生缝隙以及溢出。没有副作用，代码简洁。</strong><br><img src="09.png" alt="09.png"><br>inline-block支持ie8以上，如果需要兼容ie6.7可以加上一条*display: inline</p>
-<p><code>display: inline-block;
-*display: inline</code></p>
+        <p><strong>1. CSS和JS在网页中的放置顺序是怎样的？</strong><br>我们可以把CSS和JS的代码分别放在单独的文件中，然后在HTML的头部通过link引入CSS文件<link href="..." rel="stylesheet"><br>在body的底部通过<script src="..."></script>引入JS代码文件。</p>
+<p><strong>2. 解释白屏和FOUC</strong><br>导致白屏和FOUC的可能<br>在IE浏览器的某些情况下，样式放在底部，JS放在页面顶部，或者@import方式引入样式。<br>解决办法<br>样式引入放在HTML的头部，始终使用link方式引入文件，JS放在底部。<br>导致这种现象的原因是由于样式的加载晚于HTML</p>
+<p><strong>3. async和defer的作用是什么？有什么区别</strong></p>
+<p>async 和 defer 都是异步加载 js 脚本。</p>
+<p>带有 defer 属性的<code>&lt;script&gt;</code>标签可以放置在文档的任何位置。对应的 JavaScript 文件将在页面解析到<code>&lt;script&gt;</code>标签时开始下载，但不会执行，直到 DOM 加载完成，即onload事件触发前才会被执行。当一个带有 defer 属性的 JavaScript 文件下载时，它不会阻塞浏览器的其他进程，因此这类文件可以与其他资源文件一起并行下载。</p>
+<p>async 它的作用和 defer 一样，能够异步地加载和执行脚本，不因为加载脚本而阻塞页面的加载。但是有一点需要注意，在有 async 的情况下，JavaScript 脚本一旦下载好了就会执行，所以很有可能不是按照原本的顺序来执行的。如果 JavaScript 脚本前后有依赖性，使用 async 就很有可能出现错误。</p>
+<p><strong>4. 简述网页的渲染机制</strong></p>
+<p>解析 HTML 标签, 构建 DOM 树<br>解析 CSS 标签, 构建 CSSOM 树<br>把 DOM 和 CSSOM 组合成 渲染树 (render tree)<br>在渲染树的基础上进行布局, 计算每个节点的几何结构<br>把每个节点绘制到屏幕上 (painting)</p>
+<p><strong>5. JavaScript 定义了几种数据类型? 哪些是简单类型?哪些是复杂类型?</strong></p>
+<p>5种简单的数据类型：<br>1.Null :只有一个值：null，表示空指针。<br>2.Undefined： 也只有一个值：undefined,表示变量只被声明，但不指向任何空间。<br>3.Boolean： 两个值：ture,false。布尔值经常用在条件判断中。<br>4.Number: 不区分整数和浮点数,Number可以直接做四则运算，规则和数学一致。<br>5.String: 字符串是以单引号’或双引号”括起来的任意文本。’<br>复杂类型object</p>
+<p>对象是一组由键-值组成的无序集合</p>
+<p><strong>6. NaN、undefined、null分别代表什么?</strong></p>
+<p>NaN含义是Not a Number，表示非数字，NaN和任何值都不相等，包括自己</p>
+<p>null表示一个“空”的值，它和0以及空字符串’’不同，0是一个数值，’’表示长度为0的字符串，而null表示“空”。<br>undefined表示值未定义。</p>
+<p>大多数情况下，我们都应该用null。undefined仅仅在判断函数参数是否传递的情况下有用。</p>
+<p><strong>7. typeof和instanceof的作用和区别?</strong></p>
+<p>typeof运算符返回一个值的数据类型。</p>
+<p>instanceof运算符判断一个变量是否是某个对象（类）的实例，返回值是布尔类型的。</p>
+<p><strong>8. 判断一个变量是否是数字、字符串、布尔、函数</strong><br>判断一个变量是否是数字<br><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isNumber</span><span class="params">(el)</span></span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">typeof</span> el===<span class="string">'number'</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>判断一个变量是否是字符串<br><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isString</span><span class="params">(el)</span></span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">typeof</span> el===<span class="string">'string'</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>判断一个变量是否是布尔<br><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isBoolean</span><span class="params">(el)</span></span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">typeof</span> el===<span class="string">'boolean'</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>判断一个变量是否是函数<br><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isFunction</span><span class="params">(el)</span></span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">typeof</span> el===<span class="string">'function'</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><strong>9. 以下代码输出结果是</strong><br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">console.<span class="built_in">log</span>(<span class="number">1</span>+<span class="number">1</span>);          <span class="comment">//2</span></span><br><span class="line">console.<span class="built_in">log</span>(<span class="string">"2"</span>+<span class="string">"4"</span>);      <span class="comment">//"24"</span></span><br><span class="line">console.<span class="built_in">log</span>(<span class="number">2</span>+<span class="string">"4"</span>);        <span class="comment">//"24"</span></span><br><span class="line">console.<span class="built_in">log</span>(+<span class="keyword">new</span> Date());  <span class="comment">// 1452271614562</span></span><br><span class="line">console.<span class="built_in">log</span>(+<span class="string">"4"</span>);         <span class="comment">//4</span></span><br></pre></td></tr></table></figure></p>
+<p><strong>10. 以下代码输出结果是</strong><br><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a=<span class="number">1</span>;</span><br><span class="line">a+++a;         <span class="comment">//相当于(a++)+a               输出结果为3</span></span><br><span class="line"><span class="keyword">typeof</span> a+<span class="number">2</span>;    <span class="comment">//相当于（typeof a）+2        输出结果"number2"，</span></span><br></pre></td></tr></table></figure></p>
+<p><strong>11. 遍历数组，打印数组的每一项的平方</strong><br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var arr=[<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>];</span><br><span class="line">var i,x;</span><br><span class="line"><span class="keyword">for</span> (i=<span class="number">0</span>;i&lt;arr.length;i++)&#123;</span><br><span class="line">  x=arr[i]*arr[i];</span><br><span class="line">  console.<span class="built_in">log</span>(x);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><strong>12. 遍历JSON，打印里面的值</strong><br><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj=&#123;</span><br><span class="line">  name:<span class="string">'hunger'</span>,</span><br><span class="line">  sex:<span class="string">'male'</span>,</span><br><span class="line">  age:<span class="number">28</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">var</span> a=[];</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> key <span class="keyword">in</span> obj)&#123;</span><br><span class="line">  a.push(key+<span class="string">':'</span>+obj[key]);</span><br><span class="line">&#125;</span><br><span class="line">console.log(a.<span class="keyword">join</span>(<span class="string">','</span>));</span><br></pre></td></tr></table></figure></p>
+<p><strong>13.下面的代码输出是？为什么</strong><br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">console.<span class="built_in">log</span>(a); <span class="comment">//变量a声明赋值在调用之后，此处返回undefined，表示声明但值为空</span></span><br><span class="line">var a=<span class="number">1</span>;</span><br><span class="line">console.<span class="built_in">log</span>(a);<span class="comment">//这里就能正常调用了，返回值为1；</span></span><br><span class="line">console.<span class="built_in">log</span>(b);<span class="comment">//b未声明，此处报错Error:b is not defined</span></span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -264,12 +272,12 @@
 
     <nav id="article-nav">
         
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2016/02/25/HTML总结/">
-                    HTML总结
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2016/02/27/markdown/">
+                    markdown
                 </a>
             </div>
-        
         
     </nav>
 
@@ -278,7 +286,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#inline-block的缝隙"><span class="toc-number">1.</span> <span class="toc-text">inline-block的缝隙</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#方法1：标签头尾无空格"><span class="toc-number">1.0.1.</span> <span class="toc-text">方法1：标签头尾无空格</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#方法2：标签头尾无空格"><span class="toc-number">1.0.2.</span> <span class="toc-text">方法2：标签头尾无空格</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#方法3：负margin"><span class="toc-number">1.0.3.</span> <span class="toc-text">方法3：负margin</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#方法4：float浮动"><span class="toc-number">1.0.4.</span> <span class="toc-text">方法4：float浮动</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#方法5：父容器font-size为0"><span class="toc-number">1.0.5.</span> <span class="toc-text">方法5：父容器font-size为0</span></a></li></ol></li></ol></li></ol>
+    
 </div>
 <style>
     .left-col .switch-btn {
@@ -342,7 +350,7 @@
     
       <div class="duoshuo" id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="2016/02/25/inline-block/" data-title="inline-block的缝隙" data-url="http://yoursite.com/2016/02/25/inline-block/"></div>
+    <div class="ds-thread" data-thread-key="2016/02/29/js基本概念语法/" data-title="js基本概念语法" data-url="http://yoursite.com/2016/02/29/js基本概念语法/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
@@ -366,15 +374,15 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/02/25/HTML总结/" title="上一篇: HTML总结">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+            <a href="/2016/02/27/markdown/" title="下一篇: markdown">
+                <i class="fa fa-angle-right"></i>
+            </a>
         
     </div>
 
