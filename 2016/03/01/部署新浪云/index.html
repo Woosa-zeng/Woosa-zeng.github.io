@@ -5,16 +5,16 @@
   
   <title>部署新浪云 | Woosa&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="xxx">
+  <meta name="description" content="部署新浪云">
 <meta property="og:type" content="article">
 <meta property="og:title" content="部署新浪云">
 <meta property="og:url" content="http://yoursite.com/2016/03/01/部署新浪云/index.html">
 <meta property="og:site_name" content="Woosa's Blog">
-<meta property="og:description" content="xxx">
-<meta property="og:updated_time" content="2016-03-01T14:55:00.711Z">
+<meta property="og:description" content="部署新浪云">
+<meta property="og:updated_time" content="2016-03-01T15:16:26.758Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="部署新浪云">
-<meta name="twitter:description" content="xxx">
+<meta name="twitter:description" content="部署新浪云">
   
     <link rel="alternative" href="/atom.xml" title="Woosa&#39;s Blog" type="application/atom+xml">
   
@@ -130,7 +130,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <a href="/tags/CSS/" style="font-size: 20px;">CSS</a> <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/HTML/" style="font-size: 20px;">HTML</a> <a href="/tags/JavaScript/" style="font-size: 20px;">JavaScript</a> <a href="/tags/PhotoShop/" style="font-size: 10px;">PhotoShop</a> <a href="/tags/Sublime/" style="font-size: 10px;">Sublime</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a>
+                        <a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/HTML/" style="font-size: 10px;">HTML</a> <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/工具/" style="font-size: 10px;">工具</a>
                     </div>
                 </section>
                 
@@ -218,13 +218,13 @@
       <div class="article-info article-info-post">
         
     <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/web前端/">web前端</a><a class="article-category-link" href="/categories/web前端/笔记/">笔记</a><a class="article-category-link" href="/categories/web前端/笔记/杂谈/">杂谈</a>
+    <a class="article-category-link" href="/categories/杂谈/">杂谈</a>
     </div>
 
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GitHub/">GitHub</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML/">HTML</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PhotoShop/">PhotoShop</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Sublime/">Sublime</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jQuery/">jQuery</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/工具/">工具</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -234,7 +234,22 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        
+        <p>github很方便，但不够直观，虽然也办法可以渲染页面，但相对麻烦。为了实时的呈现HTML页面效果，研究了下新浪云。</p>
+<h3 id="新浪云几大好处"><a href="#新浪云几大好处" class="headerlink" title="新浪云几大好处"></a>新浪云几大好处</h3><blockquote>
+<p>1.在国内，速度相对要快些<br>2.简单，分分钟搞定<br>3.免费</p>
+</blockquote>
+<h3 id="云应用sae-部署"><a href="#云应用sae-部署" class="headerlink" title="云应用sae 部署"></a>云应用sae 部署</h3><blockquote>
+<p>新浪云的各种业务很多，这里只介绍sae<br>找到云应用sae创建新应用，建一个php的空文档<br>创建一个新的Git仓库并且添加一个Git远程仓库sae <a href="http://www.sinacloud.com/doc/sae/tutorial/code-deploy.html" target="_blank" rel="external">参考新浪云</a><br>上面说的很清楚，这里就不细说了</p>
+</blockquote>
+<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><blockquote>
+<p>比较坑的是因为对http的不熟然后也看不到项目文件<br>正确打开姿势<a href="http://1.ccwoosa.applinzi.com/tab/index.html" target="_blank" rel="external">http://1.ccwoosa.applinzi.com/tab/index.html</a><br>tab：当前文件存放的目录<br>index.html: 就是你的html文件啦</p>
+</blockquote>
+<p><code>另外为了解决重复输账号密码的问题</code><br>建个文件，windows命名为_netrc,linux或mac命名.netrc</p>
+<blockquote>
+<p><code>machine</code> git.abc1.com<br>login username<br>password password</p>
+</blockquote>
+<p>每次研究一个东西要半天。。熟悉之后发现5分钟就搞定(；′⌒`)</p>
+
       
     </div>
     
@@ -259,7 +274,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#新浪云几大好处"><span class="toc-number">1.</span> <span class="toc-text">新浪云几大好处</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#云应用sae-部署"><span class="toc-number">2.</span> <span class="toc-text">云应用sae 部署</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#注意事项"><span class="toc-number">3.</span> <span class="toc-text">注意事项</span></a></li></ol>
 </div>
 <style>
     .left-col .switch-btn {
