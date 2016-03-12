@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Ajax | Woosa&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Ajax标签（空格分隔）： ajax
+
+概念介绍——HTTP请求一个完整的HTTP请求过程，通常有下面7个步骤：
+
+建立TCP连接
+Web浏览器向Web服务器发送请求命令
+Web浏览器发送请求头信息
+Web服务器应答
+Web服务器发送应答头信息
+Web服务器向浏览器发送数据
+Web服务器关闭TCP连接">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ajax">
+<meta property="og:url" content="http://yoursite.com/2016/03/12/Ajax/index.html">
+<meta property="og:site_name" content="Woosa's Blog">
+<meta property="og:description" content="Ajax标签（空格分隔）： ajax
+
+概念介绍——HTTP请求一个完整的HTTP请求过程，通常有下面7个步骤：
+
+建立TCP连接
+Web浏览器向Web服务器发送请求命令
+Web浏览器发送请求头信息
+Web服务器应答
+Web服务器发送应答头信息
+Web服务器向浏览器发送数据
+Web服务器关闭TCP连接">
+<meta property="og:updated_time" content="2016-03-12T05:45:29.229Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Ajax">
+<meta name="twitter:description" content="Ajax标签（空格分隔）： ajax
+
+概念介绍——HTTP请求一个完整的HTTP请求过程，通常有下面7个步骤：
+
+建立TCP连接
+Web浏览器向Web服务器发送请求命令
+Web浏览器发送请求头信息
+Web服务器应答
+Web服务器发送应答头信息
+Web服务器向浏览器发送数据
+Web服务器关闭TCP连接">
+  
+    <link rel="alternative" href="/atom.xml" title="Woosa&#39;s Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+      <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css" type="text/css">
+  
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  
+      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  
+  <script>
+      var yiliaConfig = {
+          fancybox: true,
+          animate: true,
+          isHome: false,
+          isPost: true,
+          isArchive: false,
+          isTag: false,
+          isCategory: false,
+          open_in_new: false
+      }
+  </script>
+  
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            
+            <img lazy-src="/img/avatar.png" class="js-avatar">
+            
+        </a>
+
+        <hgroup>
+          <h1 class="header-author"><a href="/">曾萍</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">Don&#39;t limit your challenges challenge your limits.</p>
+        
+                
+
+
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">主页</a></li>
+                        
+                            <li><a href="/archives/">所有文章</a></li>
+                        
+                            <li><a href="/tags/">标签云</a></li>
+                        
+                            <li><a href="/about/">关于我</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <li id="Email"><a class="Email" target="_blank" href="mailto:zporange@gmail.com" title="Email"></a></li>
+                            
+                                <li id="GitHub"><a class="GitHub" target="_blank" href="https://github.com/Woosa-zeng" title="GitHub"></a></li>
+                            
+                                <li id="知乎"><a class="知乎" target="_blank" href="https://www.zhihu.com/" title="知乎"></a></li>
+                            
+                                <li id="简书"><a class="简书" target="_blank" href="http://www.jianshu.com/users/15b290b924e1/latest_articles" title="简书"></a></li>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/HTML/" style="font-size: 10px;">HTML</a> <a href="/tags/JavaScript/" style="font-size: 20px;">JavaScript</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/工具/" style="font-size: 10px;">工具</a>
+                    </div>
+                </section>
+                
+                
+                
+
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">曾萍</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                
+                    <img lazy-src="/img/avatar.png" class="js-avatar">
+                
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">曾萍</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">Don&#39;t limit your challenges challenge your limits.</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">主页</a></li>
+                
+                    <li><a href="/archives/">所有文章</a></li>
+                
+                    <li><a href="/tags/">标签云</a></li>
+                
+                    <li><a href="/about/">关于我</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <li id="Email"><a class="Email" target="_blank" href="mailto:zporange@gmail.com" title="Email"></a></li>
+                            
+                                <li id="GitHub"><a class="GitHub" target="_blank" href="https://github.com/Woosa-zeng" title="GitHub"></a></li>
+                            
+                                <li id="知乎"><a class="知乎" target="_blank" href="https://www.zhihu.com/" title="知乎"></a></li>
+                            
+                                <li id="简书"><a class="简书" target="_blank" href="http://www.jianshu.com/users/15b290b924e1/latest_articles" title="简书"></a></li>
+                            
+                        </ul>
+            </nav>
+        </header>                
+    </div>
+</nav>
+      <div class="body-wrap"><article id="post-Ajax" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/03/12/Ajax/" class="article-date">
+      <time datetime="2016-03-12T05:42:53.000Z" itemprop="datePublished">2016-03-12</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Ajax
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/web前端/">web前端</a><a class="article-category-link" href="/categories/web前端/笔记/">笔记</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jQuery/">jQuery</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="Ajax"><a href="#Ajax" class="headerlink" title="Ajax"></a>Ajax</h1><p>标签（空格分隔）： ajax</p>
+<hr>
+<h2 id="概念介绍——HTTP请求"><a href="#概念介绍——HTTP请求" class="headerlink" title="概念介绍——HTTP请求"></a>概念介绍——HTTP请求</h2><p><strong>一个完整的<code>HTTP请求</code>过程，通常有下面7个步骤：</strong></p>
+<ul>
+<li>建立TCP连接</li>
+<li>Web浏览器向Web服务器发送请求命令</li>
+<li>Web浏览器发送请求头信息</li>
+<li>Web服务器应答</li>
+<li>Web服务器发送应答头信息</li>
+<li>Web服务器向浏览器发送数据</li>
+<li>Web服务器关闭TCP连接 </li>
+</ul>
+<a id="more"></a>
+<p><strong>一个HTTP请求一般由四部分组成：</strong></p>
+<ul>
+<li>HTTP请求的方法或者动作，比如是GET还是POST请求</li>
+<li>正在请求的URL</li>
+<li>请求头，包含一些客户端环境信息，身份验证信息等</li>
+<li>请求体，也就是请求正文，请求正文中可以包含客户提交的查询字符串信息，表单信息等等</li>
+</ul>
+<p><strong>GET</strong></p>
+<ul>
+<li>一般用于信息获取</li>
+<li>使用URL传递参数</li>
+<li>对所发送信息的数量也有限制，一般在2000个字符内</li>
+</ul>
+<p><strong>POST</strong></p>
+<ul>
+<li>一般用于修改服务器上的资源</li>
+<li>对所发送的信息的数量无</li>
+</ul>
+<p><strong>一个HTTP响应一般由三部分组成：</strong></p>
+<ul>
+<li>一个<code>数字</code>和<code>文字</code>组成的状态码，用来显示请求是成功还是失败</li>
+<li><code>响应头</code>，响应头也和请求头一样包含许多有用的信息，例如服务器类型、日期时间、内容类型和长度等</li>
+<li><code>响应体</code>，也就是响应正文</li>
+</ul>
+<p><strong>HTTP状态码由3位数字构成，其中首位数字定义了状态码的类型：</strong></p>
+<ul>
+<li>1XX： 信息类，表示收到的Web浏览器请求，正在进一步的处理中</li>
+<li>2XX： 成功，表示用户请求被正确接收，理解和处理例如：200 OK</li>
+<li>3XX： 重定向，表示请求没有成功，客户必须采取进一步的动作</li>
+<li>4XX： 客户端错误，表示客户端提交的请求有错误，例如：404 NOT Found，意味着请求中所引用的文档不存在</li>
+<li>5XX： 服务器错误，表示服务器不能完成对请求的处理： 如500</li>
+</ul>
+<h2 id="概念介绍——XMLHttpRequest"><a href="#概念介绍——XMLHttpRequest" class="headerlink" title="概念介绍——XMLHttpRequest"></a>概念介绍——XMLHttpRequest</h2><ul>
+<li>open(method,url,async)</li>
+<li>send(string)</li>
+</ul>
+<figure class="highlight accesslog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">request.open(<span class="string">"<span class="keyword">POST</span>"</span>,<span class="string">"create.php"</span>,true);</span><br><span class="line">request.setRequestHeader(<span class="string">"Content-type"</span>,<span class="string">"application/x-www-form-urlencoded"</span>);//这句代码只能放在send前面</span><br><span class="line">request.send(<span class="string">"name = 王二狗&amp;sex=男"</span>);</span><br></pre></td></tr></table></figure>
+<p><strong>XMLHttpRequest取得响应</strong></p>
+<ul>
+<li>responseText: 获取字符串形式的响应数据 //XML json </li>
+<li>status和statusText: 以数字和文本形式返回HTTP状态码</li>
+<li>getAllResponseHeader(): 获取所有的响应报头</li>
+<li>getResponseHeader(): 查询响应中的某个字段的值（需要输入内容）</li>
+</ul>
+<p><strong>readyState属性：代表服务器的响应的变化</strong></p>
+<ul>
+<li>0： 请求未初始化，open还没有调用</li>
+<li>1： 服务器连接已建立， open已经调用了</li>
+<li>2： 请求已接收，也就是接收到头信息了</li>
+<li>3： 请求处理中，也就是接收到响应主体了</li>
+<li>4： 请求已完成，且响应已就绪，也就是响应完成了</li>
+</ul>
+<p>监听readyState<br><figure class="highlight accesslog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">var request = new XMLHttpRequest();</span><br><span class="line">request.open(<span class="string">"<span class="keyword">GET</span>"</span>,<span class="string">"get.php"</span>,true);</span><br><span class="line">request.send();</span><br><span class="line">request.onreadystatechange = function()&#123;</span><br><span class="line">    if(request.readyState === <span class="number">4</span> &amp;&amp; request.status === <span class="number">200</span>)&#123;</span><br><span class="line">        //do something   request.responseText</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+<h2 id="JSON基本概念"><a href="#JSON基本概念" class="headerlink" title="JSON基本概念"></a>JSON基本概念</h2><ul>
+<li>JSON： JavaScript对象表示法</li>
+<li>存储和交换文本信息的语法，类似XML。采用键值对的方式来组织，易于人们阅读和编写，同时也易于机器解析和生成</li>
+<li>JSON是独立于语言的，也就是说不管什么语言，都可以解析JSON，只需要按照json的规则来就行</li>
+</ul>
+<p><strong>JSON与XML比较</strong></p>
+<ul>
+<li>json的长度和xml格式比起来短小</li>
+<li>json读写的速度更快</li>
+<li>json可以使用JavaScript内建的方法直接进行解析，转换成JavaScript对象，非常方便</li>
+</ul>
+<p><strong>JSON语法规则</strong></p>
+<ul>
+<li>JSON数据的书写格式是：名称/值对。<br>名称/值对组合中的名称写在前面（在双引号中），值对写在后面（也在双引号中），中间用冒号隔开：比如<code>&quot;name&quot;:&quot;小萌&quot;</code></li>
+<li>json的值可以是下面这些类型：<br>数字（整数或浮点数），比如123，1.23<br>字符串（在双引号中）<br>逻辑值（true或false）<br>数组（在方括号中）<br>对象（在花括号中）<br>null</li>
+</ul>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    "<span class="attribute">staff</span>":<span class="value">[</span><br><span class="line">        &#123;"<span class="attribute">name</span>":<span class="value"><span class="string">"小萌"</span></span>,"<span class="attribute">age</span>":<span class="value"><span class="number">16</span></span>&#125;,</span><br><span class="line">        &#123;"<span class="attribute">name</span>":<span class="value"><span class="string">"小丫"</span></span>,"<span class="attribute">age</span>":<span class="value"><span class="number">13</span></span>&#125;,</span><br><span class="line">        &#123;"<span class="attribute">name</span>":<span class="value"><span class="string">"小阳"</span></span>,"<span class="attribute">age</span>":<span class="value"><span class="number">15</span></span>&#125;</span><br><span class="line">    ]</span><br><span class="line"></span>&#125;</span><br></pre></td></tr></table></figure>
+<p>解析:安全方便的JSON.parse()<br><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable"><span class="keyword">var</span> jsondata</span> = '&#123;<span class="string">"staff"</span>:[&#123;<span class="string">"name"</span>:<span class="string">"小萌"</span>,<span class="string">"age"</span>:<span class="number">14</span>&#125;,&#123;<span class="string">"name"</span>:<span class="string">"小丫"</span>,<span class="string">"age"</span>:<span class="number">12</span>&#125;]&#125;';</span><br><span class="line"><span class="variable"><span class="keyword">var</span> jsonobj</span> = JSON.parse( jsondata);</span><br><span class="line">alert(jsonobj.staff[<span class="number">0</span>].age);</span><br></pre></td></tr></table></figure></p>
+<p>JSON数据校验<a href="http://jsonlint.com/" target="_blank" rel="external">jsonlint</a></p>
+<h2 id="jQuery实现Ajax"><a href="#jQuery实现Ajax" class="headerlink" title="jQuery实现Ajax"></a>jQuery实现Ajax</h2><p><strong>常用jQuery设置</strong></p>
+<ul>
+<li>jQuery.ajax([settings])</li>
+<li>type: 类型，”POST” 或 “GET”,默认为”GET”</li>
+<li>url: 发送请求的地址</li>
+<li>data: 是一个对象，连同请求发送到服务器的数据</li>
+<li>dataType: 预期服务器返回的数据类型。如果不指定，jQuery将自动根据HTTP包MIME信息来智能判断，一般我们采用json格式，或要设置为”json”</li>
+<li>success: 是一个方法，请求成功后的回调函数。传入返回后的数据，以及包含成功代码的字符串</li>
+<li>error: 是一个方法，请求失败时调用此函数。传入XMLHttpRequest对象</li>
+<li>更多可参考官方文档</li>
+</ul>
+<h2 id="跨域"><a href="#跨域" class="headerlink" title="跨域"></a>跨域</h2><ul>
+<li>一个域名的地址组成：</li>
+</ul>
+<p><code>http://www.abc.com:8080/scripts/jquery.js</code><br><code>http://</code> 协议<br><code>www</code> 子域名<br><code>abc.com</code> 主域名<br><code>8080</code>  端口号,一般为80，当为80的时候可以省略<br><code>scripts/jquery.js</code> 请求资源地址</p>
+<ul>
+<li>当协议、子域名、主域名、端口号中任意一个不相同时，都算作不同域</li>
+<li>不同域之间相互请求资源，就算作“跨域”<br>比如：<code>http://www.abc.com/index.html请求http://www.efg.com/service.php</code></li>
+<li><p>JavaScript出于安全方面的考虑，不允许跨域调用其它页面的对象。什么是跨域呢，简单的理解就是因为JavaScript同源策略的限制，<code>a.com</code>域名下的js无法操作<code>b.com</code>或是<code>c.a.com</code>域名下的对象</p>
+</li>
+<li><p>解决跨域，后端可以使用代理另一个方法可以使用JSONP</p>
+</li>
+</ul>
+<p><strong>处理跨域方法JSONP</strong></p>
+<ul>
+<li>JSONP可用于解决主流浏览器的跨域数据访问的问题。<br>在www.aaa.com页面中：<figure class="highlight dust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="actionscript"></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">jsonp</span><span class="params">(json)</span></span></span></span><span class="expression">&#123;</span><br><span class="line">        <span class="variable">alert</span>(<span class="variable">json</span>[<span class="string">"name"</span>]);</span><br><span class="line">    &#125;</span><span class="xml"><span class="handlebars"><span class="xml"></span><br><span class="line"><span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="handlebars"><span class="xml"></span><br><span class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"http://www.bbb.com/jsonp.js"</span>&gt;</span><span class="handlebars"><span class="xml"><span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="undefined"></span></span></span></span></span></span></span></span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>在www.bbb.com页面中：<br>jsonp({‘name’:’小萌’,’age’:13});</p>
+<p><em>JSONP只支持GET不支持POST</em></p>
+<p><strong>处理跨域方法XHR2</strong></p>
+<ul>
+<li>HTML5提供的XMLHttpRequest Level2已经实现了跨域访问以及其他的一些新功能</li>
+<li>IE10以下的版本都不支持</li>
+<li>在服务器端做一些小小的改造即可：<br>header(‘Access-Control-Allow-Origin:<em>‘);`</em>`代表所有域名可访问，当然也可以自己设置相应的域名<br>header(‘Access-Control-Allow-Methods:POST,GET’);</li>
+</ul>
+<p>最后附上js与jquery的<a href="https://github.com/Woosa-zeng/git-test/tree/master/test/ajax/searchstaffinf" target="_blank" rel="external">demo</a></p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+
+
+    <nav id="article-nav">
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2016/03/08/面向对象/">
+                    面向对象
+                </a>
+            </div>
+        
+    </nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Ajax"><span class="toc-number">1.</span> <span class="toc-text">Ajax</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#概念介绍——HTTP请求"><span class="toc-number">1.1.</span> <span class="toc-text">概念介绍——HTTP请求</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#概念介绍——XMLHttpRequest"><span class="toc-number">1.2.</span> <span class="toc-text">概念介绍——XMLHttpRequest</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JSON基本概念"><span class="toc-number">1.3.</span> <span class="toc-text">JSON基本概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jQuery实现Ajax"><span class="toc-number">1.4.</span> <span class="toc-text">jQuery实现Ajax</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#跨域"><span class="toc-number">1.5.</span> <span class="toc-text">跨域</span></a></li></ol></li></ol>
+</div>
+<style>
+    .left-col .switch-btn {
+        display: none;
+    }
+    .left-col .switch-area {
+        display: none;
+    }
+</style>
+
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+            $(".switch-btn, .switch-area").fadeOut(300);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+            $(".switch-btn, .switch-area").fadeIn(500);
+        }
+    })
+
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+        $(".switch-btn, .switch-area").show();
+    }
+</script>
+
+
+
+
+    <div class="share">
+    <div class="bdsharebuttonbox">
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+    <a href="#" class="bds_copy" data-cmd="copy" title="复制网址"></a>
+    <a href="#" class="bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+    </div>
+    <script>
+        window._bd_share_config={
+            "common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+    </script>
+</div>
+
+
+
+    
+      <div class="duoshuo" id="comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="2016/03/12/Ajax/" data-title="Ajax" data-url="http://yoursite.com/2016/03/12/Ajax/"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:"woosazeng"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+    <!-- 多说公共JS代码 end -->
+</div>
+
+    
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2016/03/08/面向对象/" title="下一篇: 面向对象">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/03/12/Ajax/">Ajax</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/03/08/面向对象/">面向对象</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/03/01/部署新浪云/">部署新浪云</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/02/29/js基本概念语法/">js基本概念语法</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/02/27/markdown/">markdown</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/02/25/HTML总结/">HTML总结</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/02/25/inline-block/">inline-block的缝隙</a></li></ul>
+    <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#toc, .switch-btn, .switch-area").toggle();
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+                $(".switch-btn, .switch-area").fadeToggle(300);
+            }
+        })
+    </script>
+
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2016 曾萍
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的静态博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减双栏 Hexo 博客主题">Yelee</a> by MOxFIVE
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" >本站到访数: 
+                            <span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>, </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit">本页阅读量: 
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+    </div>
+    
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+    <style>
+        body {
+          background: lightgray;
+        }
+        #container .left-col {
+          background: white;
+        }
+        .article-inner {
+          background: white;
+          margin-bottom: 1em;
+        }
+        .post-nav-button {
+          background: #ececec;
+        }
+        #header .header-nav .social #GitHub {
+          background-color: #bfd3ec;
+        }
+        #post-nav-button a {
+          background: rgba(215, 216, 215, .2);
+        }
+        .post-list {
+          background: white;
+        }
+    </style>
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+</div>
+
+<script>
+    $(document).ready(function() {
+        if ($("#comments").length < 1) {
+            $("#scroll > a:nth-child(2)").hide();
+        };
+    })
+</script>
+
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+  </div>
+</body>
+</html>
