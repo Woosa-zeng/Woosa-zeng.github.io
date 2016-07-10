@@ -3,17 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Category: 笔记 | Woosa&#39;s Blog</title>
+  <title>重装系统后配置github和hexo | Woosa&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Woosa's Blog">
-<meta property="og:url" content="http://yoursite.com/categories/笔记/index.html">
+  <meta name="description" content="xxx">
+<meta property="og:type" content="article">
+<meta property="og:title" content="重装系统后配置github和hexo">
+<meta property="og:url" content="http://yoursite.com/2016/07/10/重装系统后配置github/index.html">
 <meta property="og:site_name" content="Woosa's Blog">
-<meta property="og:description">
+<meta property="og:description" content="xxx">
+<meta property="og:updated_time" content="2016-07-10T13:11:40.938Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Woosa's Blog">
-<meta name="twitter:description">
+<meta name="twitter:title" content="重装系统后配置github和hexo">
+<meta name="twitter:description" content="xxx">
   
     <link rel="alternative" href="/atom.xml" title="Woosa&#39;s Blog" type="application/atom+xml">
   
@@ -36,10 +37,10 @@
           fancybox: true,
           animate: true,
           isHome: false,
-          isPost: false,
+          isPost: true,
           isArchive: false,
           isTag: false,
-          isCategory: true,
+          isCategory: false,
           open_in_new: false
       }
   </script>
@@ -191,93 +192,206 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-重装系统后配置github" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2016/02/27/markdown/" class="archive-article-date">
-      <time datetime="2016-02-27T01:35:34.000Z" itemprop="datePublished">02-27</time>
+    <div class="article-meta">
+      <a href="/2016/07/10/重装系统后配置github/" class="article-date">
+      <time datetime="2016-07-10T12:42:37.000Z" itemprop="datePublished">2016-07-10</time>
 </a>
-        </div>
-         
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/02/27/markdown/">markdown</a>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      重装系统后配置github和hexo
     </h1>
   
 
-        <div class="article-info info-on-archive">
-          
+      </header>
+      
+      <div class="article-info article-info-post">
+        
     <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/笔记/">笔记</a><a class="article-category-link" href="/categories/笔记/杂谈/">杂谈</a>
+    <a class="article-category-link" href="/categories/杂谈/">杂谈</a>
     </div>
 
 
-          
+        
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/markdown/">markdown</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GitHub/">GitHub</a></li></ul>
     </div>
 
-        </div>
         <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
+      </div>
+      
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2016/02/25/inline-block/" class="archive-article-date">
-      <time datetime="2016-02-24T16:05:32.000Z" itemprop="datePublished">02-25</time>
-</a>
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/02/25/inline-block/">inline-block的缝隙</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
+    <div class="article-entry" itemprop="articleBody">
+      
           
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/笔记/">笔记</a>
+        <h1 id="重装系统后如何配置git本地与远程仓库"><a href="#重装系统后如何配置git本地与远程仓库" class="headerlink" title="重装系统后如何配置git本地与远程仓库"></a>重装系统后如何配置git本地与远程仓库</h1><hr>
+<p>前几天系统重装了，很多东西都没有备份，工作快三个月了，由于公司用svn,不用git，对git的东西有点生疏了，网上找了些贴子，自己整理一下，方便以后如果再次重装</p>
+<h2 id="配置ssh"><a href="#配置ssh" class="headerlink" title="配置ssh"></a>配置ssh</h2><p>ssh-keygen -t rsa -C “your email@example.com”</p>
+<p>邮箱是你GitHub上留的邮箱，需要输入时直接回车，rsa就生成好了。<br>找到你在C盘的.ssh文件夹，打开id_rsa.pub,复制密码。<br>打开远程GitHub  Settings –&gt;SSH and GPG keys –&gt;New SSH Key之前的没用了可以直接删掉。<br>然后就可以在本地pull了</p>
+<h2 id="配置hexo"><a href="#配置hexo" class="headerlink" title="配置hexo"></a>配置hexo</h2><p>安装git<br>安装nodejs<br>然后重新下载hexo <code>npm install -g hexo</code><br>如果之前的hexo文件夹还在，就可以直接<code>hexo new name</code>写新的文章了<br>如果什么都没有了，可以看看<a href="http://liugui.me/2015/12/31/%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F%E5%90%8Ehexo%E5%86%99%E5%8D%9A%E5%AE%A2%E5%8A%9F%E8%83%BD%E7%9A%84%E6%81%A2%E5%A4%8D/" target="_blank" rel="external">这个</a></p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+
+
+    <nav id="article-nav">
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2016/03/12/Ajax/">
+                    Ajax
+                </a>
+            </div>
+        
+    </nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#重装系统后如何配置git本地与远程仓库"><span class="toc-number">1.</span> <span class="toc-text">重装系统后如何配置git本地与远程仓库</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#配置ssh"><span class="toc-number">1.1.</span> <span class="toc-text">配置ssh</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置hexo"><span class="toc-number">1.2.</span> <span class="toc-text">配置hexo</span></a></li></ol></li></ol>
+</div>
+<style>
+    .left-col .switch-btn {
+        display: none;
+    }
+    .left-col .switch-area {
+        display: none;
+    }
+</style>
+
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+            $(".switch-btn, .switch-area").fadeOut(300);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+            $(".switch-btn, .switch-area").fadeIn(500);
+        }
+    })
+
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+        $(".switch-btn, .switch-area").show();
+    }
+</script>
+
+
+
+
+    <div class="share">
+    <div class="bdsharebuttonbox">
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+    <a href="#" class="bds_copy" data-cmd="copy" title="复制网址"></a>
+    <a href="#" class="bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+    </div>
+    <script>
+        window._bd_share_config={
+            "common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+    </script>
+</div>
+
+
+
+    
+      <div class="duoshuo" id="comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="2016/07/10/重装系统后配置github/" data-title="重装系统后配置github和hexo" data-url="http://yoursite.com/2016/07/10/重装系统后配置github/"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:"woosazeng"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+    <!-- 多说公共JS代码 end -->
+</div>
+
+    
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2016/03/12/Ajax/" title="下一篇: Ajax">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
     </div>
 
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/07/10/重装系统后配置github/">重装系统后配置github和hexo</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/03/12/Ajax/">Ajax</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/03/08/面向对象/">面向对象</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/03/01/部署新浪云/">部署新浪云</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/02/29/js基本概念语法/">js基本概念语法</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/02/27/markdown/">markdown</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/02/25/HTML总结/">HTML总结</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/02/25/inline-block/">inline-block的缝隙</a></li></ul>
+    <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#toc, .switch-btn, .switch-area").toggle();
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+                $(".switch-btn, .switch-area").fadeToggle(300);
+            }
+        })
+    </script>
 
-          
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li></ul>
-    </div>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
 
-    
 
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">
@@ -358,17 +472,6 @@
         };
     })
 </script>
-
-    <button class="hide-labels">TAG 开关</button>
-    <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js">
-    </script>
-    <script>
-        $(document).ready(function() {
-            $("button").click(function() {
-                $(".article-info").toggle(200);
-            });
-        });
-    </script>
 
 
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">

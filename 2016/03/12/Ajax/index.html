@@ -5,46 +5,28 @@
   
   <title>Ajax | Woosa&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Ajax标签（空格分隔）： ajax
-
-概念介绍——HTTP请求一个完整的HTTP请求过程，通常有下面7个步骤：
+  <meta name="description" content="概念介绍——HTTP请求一个完整的HTTP请求过程，通常有下面7个步骤：
 
 建立TCP连接
 Web浏览器向Web服务器发送请求命令
-Web浏览器发送请求头信息
-Web服务器应答
-Web服务器发送应答头信息
-Web服务器向浏览器发送数据
-Web服务器关闭TCP连接">
+Web浏览器发送请求头信息">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Ajax">
 <meta property="og:url" content="http://yoursite.com/2016/03/12/Ajax/index.html">
 <meta property="og:site_name" content="Woosa's Blog">
-<meta property="og:description" content="Ajax标签（空格分隔）： ajax
-
-概念介绍——HTTP请求一个完整的HTTP请求过程，通常有下面7个步骤：
+<meta property="og:description" content="概念介绍——HTTP请求一个完整的HTTP请求过程，通常有下面7个步骤：
 
 建立TCP连接
 Web浏览器向Web服务器发送请求命令
-Web浏览器发送请求头信息
-Web服务器应答
-Web服务器发送应答头信息
-Web服务器向浏览器发送数据
-Web服务器关闭TCP连接">
-<meta property="og:updated_time" content="2016-03-12T05:45:29.229Z">
+Web浏览器发送请求头信息">
+<meta property="og:updated_time" content="2016-03-16T03:31:17.609Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ajax">
-<meta name="twitter:description" content="Ajax标签（空格分隔）： ajax
-
-概念介绍——HTTP请求一个完整的HTTP请求过程，通常有下面7个步骤：
+<meta name="twitter:description" content="概念介绍——HTTP请求一个完整的HTTP请求过程，通常有下面7个步骤：
 
 建立TCP连接
 Web浏览器向Web服务器发送请求命令
-Web浏览器发送请求头信息
-Web服务器应答
-Web服务器发送应答头信息
-Web服务器向浏览器发送数据
-Web服务器关闭TCP连接">
+Web浏览器发送请求头信息">
   
     <link rel="alternative" href="/atom.xml" title="Woosa&#39;s Blog" type="application/atom+xml">
   
@@ -160,7 +142,7 @@ Web服务器关闭TCP连接">
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/HTML/" style="font-size: 10px;">HTML</a> <a href="/tags/JavaScript/" style="font-size: 20px;">JavaScript</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/工具/" style="font-size: 10px;">工具</a>
+                        <a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/HTML/" style="font-size: 10px;">HTML</a> <a href="/tags/JavaScript/" style="font-size: 20px;">JavaScript</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/工具/" style="font-size: 10px;">工具</a>
                     </div>
                 </section>
                 
@@ -264,19 +246,19 @@ Web服务器关闭TCP连接">
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h1 id="Ajax"><a href="#Ajax" class="headerlink" title="Ajax"></a>Ajax</h1><p>标签（空格分隔）： ajax</p>
-<hr>
-<h2 id="概念介绍——HTTP请求"><a href="#概念介绍——HTTP请求" class="headerlink" title="概念介绍——HTTP请求"></a>概念介绍——HTTP请求</h2><p><strong>一个完整的<code>HTTP请求</code>过程，通常有下面7个步骤：</strong></p>
+        <h2 id="概念介绍——HTTP请求"><a href="#概念介绍——HTTP请求" class="headerlink" title="概念介绍——HTTP请求"></a>概念介绍——HTTP请求</h2><p><strong>一个完整的<code>HTTP请求</code>过程，通常有下面7个步骤：</strong></p>
 <ul>
 <li>建立TCP连接</li>
 <li>Web浏览器向Web服务器发送请求命令</li>
 <li>Web浏览器发送请求头信息</li>
+</ul>
+<a id="more"></a>
+<ul>
 <li>Web服务器应答</li>
 <li>Web服务器发送应答头信息</li>
 <li>Web服务器向浏览器发送数据</li>
 <li>Web服务器关闭TCP连接 </li>
 </ul>
-<a id="more"></a>
 <p><strong>一个HTTP请求一般由四部分组成：</strong></p>
 <ul>
 <li>HTTP请求的方法或者动作，比如是GET还是POST请求</li>
@@ -383,9 +365,12 @@ Web服务器关闭TCP连接">
 <ul>
 <li>HTML5提供的XMLHttpRequest Level2已经实现了跨域访问以及其他的一些新功能</li>
 <li>IE10以下的版本都不支持</li>
-<li>在服务器端做一些小小的改造即可：<br>header(‘Access-Control-Allow-Origin:<em>‘);`</em>`代表所有域名可访问，当然也可以自己设置相应的域名<br>header(‘Access-Control-Allow-Methods:POST,GET’);</li>
+<li>在服务器端做一些小小的改造即可：<blockquote>
+<p>header(‘Access-Control-Allow-Origin:*‘);<code>*</code>代表所有域名可访问，当然也可以自己设置相应的域名<br>header(‘Access-Control-Allow-Methods:POST,GET’);</p>
+</blockquote>
+</li>
 </ul>
-<p>最后附上js与jquery的<a href="https://github.com/Woosa-zeng/git-test/tree/master/test/ajax/searchstaffinf" target="_blank" rel="external">demo</a></p>
+<p>最后附上<code>js</code>与<code>jquery</code>的<a href="https://github.com/Woosa-zeng/git-test/tree/master/test/ajax/searchstaffinf" target="_blank" rel="external">demo</a></p>
 
       
     </div>
@@ -396,6 +381,12 @@ Web服务器关闭TCP连接">
 
 
     <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2016/07/10/重装系统后配置github/">
+                    重装系统后配置github和hexo
+                </a>
+            </div>
         
         
             <div id="article-nav-older" class="article-nav-title">
@@ -411,7 +402,7 @@ Web服务器关闭TCP连接">
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Ajax"><span class="toc-number">1.</span> <span class="toc-text">Ajax</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#概念介绍——HTTP请求"><span class="toc-number">1.1.</span> <span class="toc-text">概念介绍——HTTP请求</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#概念介绍——XMLHttpRequest"><span class="toc-number">1.2.</span> <span class="toc-text">概念介绍——XMLHttpRequest</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JSON基本概念"><span class="toc-number">1.3.</span> <span class="toc-text">JSON基本概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jQuery实现Ajax"><span class="toc-number">1.4.</span> <span class="toc-text">jQuery实现Ajax</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#跨域"><span class="toc-number">1.5.</span> <span class="toc-text">跨域</span></a></li></ol></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#概念介绍——HTTP请求"><span class="toc-number">1.</span> <span class="toc-text">概念介绍——HTTP请求</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#概念介绍——XMLHttpRequest"><span class="toc-number">2.</span> <span class="toc-text">概念介绍——XMLHttpRequest</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JSON基本概念"><span class="toc-number">3.</span> <span class="toc-text">JSON基本概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jQuery实现Ajax"><span class="toc-number">4.</span> <span class="toc-text">jQuery实现Ajax</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#跨域"><span class="toc-number">5.</span> <span class="toc-text">跨域</span></a></li></ol>
 </div>
 <style>
     .left-col .switch-btn {
@@ -499,7 +490,9 @@ Web服务器关闭TCP连接">
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+            <a href="/2016/07/10/重装系统后配置github/" title="上一篇: 重装系统后配置github和hexo">
+                <i class="fa fa-angle-left"></i>
+            </a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
@@ -511,7 +504,7 @@ Web服务器关闭TCP连接">
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/03/12/Ajax/">Ajax</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/03/08/面向对象/">面向对象</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/03/01/部署新浪云/">部署新浪云</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/02/29/js基本概念语法/">js基本概念语法</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/02/27/markdown/">markdown</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/02/25/HTML总结/">HTML总结</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/02/25/inline-block/">inline-block的缝隙</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/07/10/重装系统后配置github/">重装系统后配置github和hexo</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/03/12/Ajax/">Ajax</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/03/08/面向对象/">面向对象</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/03/01/部署新浪云/">部署新浪云</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/02/29/js基本概念语法/">js基本概念语法</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/02/27/markdown/">markdown</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/02/25/HTML总结/">HTML总结</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/02/25/inline-block/">inline-block的缝隙</a></li></ul>
     <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
     <script>
         $(".post-list").addClass("toc-article");
